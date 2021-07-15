@@ -8,13 +8,21 @@ const Article = (props) => {
   const d = new Date(props.publishedAt);
 
   return (
-    <Card className="flex-item" border="dark" onClick={clickHandler}>
-      <Card.Img className="card-image" src={props.image} />
-      <Card.Title className="card-title">{props.title}</Card.Title>
+    <Card border="dark" onClick={clickHandler}>
+      <Card.Img src={props.image} />
+      <Card.Title>{props.title}</Card.Title>
       <Card.Body>
-        <Card.Text className="card-text">{props.description}</Card.Text>
+        <Card.Text
+          style={{
+            whiteSpace: "wrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {props.description}
+        </Card.Text>
       </Card.Body>
-      <Card.Footer className="blockquote-footer">
+      <Card.Footer>
         {d.toDateString() + " " + d.toLocaleTimeString("en-US")}
       </Card.Footer>
     </Card>

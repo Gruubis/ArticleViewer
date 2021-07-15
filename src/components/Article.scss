@@ -1,47 +1,27 @@
-// .truncate {
-//   width: 250px;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
-
-.title {
-  padding-left: 5px;
+.card {
+  min-height: 450px;
+}
+.card-img {
+  max-height: 150px;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: scale(1.1);
+}
+.card-body {
+  max-height: 10rem;
+}
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; // amount of line you want
+  -webkit-box-orient: vertical;
+}
+.h5 {
   text-align: center;
-}
-/* REACT */
-.flex-item {
-  flex: 0 1 32%;
-}
-
-.card-image img {
-  display: block;
-  border-radius: 2px 2px 0 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-img {
-  border-style: none;
-}
-
-.card-content {
-  padding: 12px;
-}
-.card-description {
-  margin: 0;
-}
-
-.card-title {
-  display: block;
-  line-height: 32px;
-  margin-bottom: 8px;
-  margin-left: 8px;
-  margin-top: 8px;
-  font-size: 24px;
+  margin: 0.5rem;
+  padding: 8px;
   font-weight: bold;
 }

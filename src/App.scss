@@ -6,28 +6,47 @@ $Card: (
   "bg": black,
   "text": "danger",
 );
-Card.Text {
-  font: 100% $font-stack;
-  color: $primary-color;
+.App_form-control__jgqP8 {
+  margin: auto;
+  padding: 50px;
 }
-body {
-  background-color: $background-color;
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 35%;
 }
-
+.input-group-text {
+  background-color: white;
+  border: white;
+  padding: 0ch;
+}
+.btn {
+  box-shadow: 0px 0px 4px 1px #000000;
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+}
 .form-control {
-  margin: 0.5rem 0;
-}
-
-.form-control label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
+  margin: auto;
+  padding: 0px 75px 75px 75px;
+  border: white;
 }
 
 .form-control input {
   display: block;
   width: 100%;
-  border: 1px solid rgb(100, 206, 255);
+  border: 1px solid #ccc;
   font: inherit;
   line-height: 1.5rem;
   padding: 0 0.25rem;
@@ -35,15 +54,30 @@ body {
 
 .form-control input:focus {
   outline: none;
-  background: #d0ebfa;
-  border-color: #3a89f0;
+  background: #95f7aa;
+  border-color: #b2e798;
 }
 
 .form-control.invalid input {
   border-color: red;
-  background: #a9c7ff;
+  background: #ffd7d7;
 }
 
-.form-control.invalid label {
-  color: red;
+.invalid {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  align-items: center;
+  color: #d63301;
+  background-color: #ffccba;
+  background-image: url("https://i.imgur.com/GnyDvKN.png");
+}
+.content {
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
 }
