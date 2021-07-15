@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Start instructions
 
-Install npm modules and start APP Server
+Install npm modules and start Article viewer
 
 ```shell
 $ cd article_viewer && npm install
